@@ -38,7 +38,7 @@ if "memory" not in st.session_state:
 @st.cache_resource
 def load_embeddings():
     """Load and cache the embeddings model."""
-    return HuggingFaceEmbeddings(model_name="nlpaueb/legal-bert-base-uncased")
+    return HuggingFaceEmbeddings(model_name="law-ai/InLegalBERT")
 
 embeddings = load_embeddings()
 db = FAISS.load_local("ipc_embed_db", embeddings, allow_dangerous_deserialization=True)
