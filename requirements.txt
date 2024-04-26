@@ -1,0 +1,12 @@
+langchain==0.1.15
+pypdf
+transformers==4.39.3
+sentence-transformers
+accelerate
+faiss-cpu
+streamlit==1.33.0
+langchain-fireworks
+einops
+langchain-together
+ray==2.10.0
+unstructured
