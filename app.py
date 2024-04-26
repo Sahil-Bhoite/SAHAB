@@ -58,11 +58,11 @@ CONTEXT: {context}
 CHAT HISTORY: {chat_history}
 QUESTION: {question}
 ANSWER:
-- Point 1: [Detail the first key aspect of the law, ensuring it reflects general application]
-- Point 2: [Provide a concise explanation of how the law is typically interpreted or applied]
-- Point 3: [Correct a common misconception or clarify a frequently misunderstood aspect]
-- Point 4: [Detail any exceptions to the general rule, if applicable]
-- Point 5: [Include any additional relevant information that directly relates to the user's query]
+- [Detail the first key aspect of the law, ensuring it reflects general application]
+- [Provide a concise explanation of how the law is typically interpreted or applied]
+- [Correct a common misconception or clarify a frequently misunderstood aspect]
+- [Detail any exceptions to the general rule, if applicable]
+- [Include any additional relevant information that directly relates to the user's query]
 </s>[INST]
 """
 
