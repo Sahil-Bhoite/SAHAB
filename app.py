@@ -107,7 +107,7 @@ if input_prompt:
             answer = extract_answer(result["answer"])
 
             # Initialize the response message
-            full_response = "⚠️ **_Note: Information provided may be inaccurate._** \n\n\n"
+            full_response = "⚠️ **_Gentle reminder: We generally ensure precise information, but do double-check._** \n\n\n"
             for chunk in answer:
                 # Simulate typing by appending chunks of the response over time
                 full_response += chunk
