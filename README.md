@@ -3,8 +3,8 @@
 SAHAB is an AI-driven RAG-based multi-modal chatbot designed to enhance user interaction on the Department of Justice (DoJ) website. It provides accurate, context-aware information on legal matters, court procedures, and DoJ services, utilizing advanced algorithms and Language Models (LLMs) to efficiently process and retrieve relevant data.
 
 <div align="center">
-  <img src="images/Screenshot1.png" alt="SAHAB Interface" width="50%">
-  <img src="images/Screenshot2.png" alt="SAHAB in Action" width="50%">
+  <img src="images/Screenshot1.png" alt="SAHAB Interface" width="45%">
+  <img src="images/Screenshot2.png" alt="SAHAB in Action" width="45%">
 </div>
 
 ## Problem Statement
