@@ -1,4 +1,8 @@
 [theme]
-backgroundColor="#d1d3d7"
-secondaryBackgroundColor="#bcbcbc"
-textColor="#0e0000"
+base = "light"
+primaryColor = "#4ba3ff"
+backgroundColor = "#ffffff"  # Changed to 255,255,255
+secondaryBackgroundColor = "#f0f2f6"  # Changed to 240,242,246
+font = "sans serif"
+textColor = "#31333f"  # Changed to 49,51,63
+
