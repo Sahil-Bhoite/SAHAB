@@ -5,3 +5,4 @@ langchain_huggingface==0.0.3
 langchain_together==0.1.5
 streamlit==1.33.0
 
+faiss-cpu==1.7.4
