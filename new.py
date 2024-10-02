@@ -13,7 +13,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Set the Streamlit page configuration and theme
 st.set_page_config(page_title="SAHAB", layout="wide")
-st.header("SMART AUTOMATED HIERARCHICAL ANALYSIS BOT")
+st.header("Smart Assistant for Handling Advocacy and Briefings")
 
 # Sidebar configuration
 with st.sidebar:
