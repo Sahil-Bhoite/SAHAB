@@ -1,4 +1,4 @@
-# SAHAB - Smart Automated Hierarchical Analysis Bot
+# SAHAB - Smart Assistant for Handling Advocacy and Briefings
 
 SAHAB is an AI-driven RAG-based multi-modal chatbot designed to enhance user interaction on the Department of Justice (DoJ) website. It provides accurate, context-aware information on legal matters, court procedures, and DoJ services, utilizing advanced algorithms and Language Models (LLMs) to efficiently process and retrieve relevant data.
 
