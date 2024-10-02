@@ -11,7 +11,7 @@ from config import TOGETHER_API_KEY  # Import API key from config.py
 
 # Set the Streamlit page configuration and theme
 st.set_page_config(page_title="SAHAB", layout="wide")
-st.header("SMART AUTOMATED HIERARCHICAL ANALYSIS BOT")
+st.header("Smart Assistant for Handling Advocacy and Briefings")
 with st.sidebar:
     st.title("S.A.H.A.B")
     # Display the logo image
