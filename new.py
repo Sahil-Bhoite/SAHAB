@@ -1,4 +1,5 @@
 import os
+import time
 import streamlit as st
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings 
@@ -83,8 +84,8 @@ def get_response_online(prompt, context):
     QUESTION: {prompt}
     ANSWER:
     """
-    response = model.generate_content(full_prompt)
-    return response.text
+    response = model.generate_content(full_prompt, stream=True)
+    return response
 
 def get_response_offline(prompt, context):
     llm = ChatOllama(model="phi3")
@@ -125,24 +126,28 @@ if input_prompt:
             context_text = "\n".join([doc.page_content for doc in context])
             
             if model_mode:
-                answer = get_response_online(input_prompt, context_text)
+                response = get_response_online(input_prompt, context_text)
             else:
-                answer = get_response_offline(input_prompt, context_text)
+                response = get_response_offline(input_prompt, context_text)
 
             message_placeholder = st.empty()
+            full_response = "⚠️ **_Gentle reminder: We generally ensure precise information, but do double-check._** \n\n\n"
+            
+            if model_mode:
+                for chunk in response:
+                    full_response += chunk.text
+                    time.sleep(0.02)  # Adjust the sleep time to control the "typing" speed
+                    message_placeholder.markdown(full_response + "  ", unsafe_allow_html=True)
+            else:
+                full_response += response
+                message_placeholder.markdown(full_response, unsafe_allow_html=True)
 
             # Translate the answer to the selected language
-            if selected_language == "English":
-                translated_answer = answer
-            else:
-                translated_answer = translate_answer(answer, selected_language.lower())
+            if selected_language != "English":
+                translated_answer = translate_answer(full_response, selected_language.lower())
+                message_placeholder.markdown(translated_answer, unsafe_allow_html=True)
 
-            # Initialize the response message
-            full_response = "⚠️ **_Gentle reminder: We generally ensure precise information, but do double-check._** \n\n\n"
-            full_response += translated_answer
-            message_placeholder.markdown(full_response + "  ", unsafe_allow_html=True)
-
-        st.session_state.messages.append({"role": "assistant", "content": translated_answer})
+        st.session_state.messages.append({"role": "assistant", "content": full_response})
 
         if st.button('🗑️ Reset', on_click=reset_conversation):
             st.experimental_rerun()
