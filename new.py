@@ -5,7 +5,6 @@ from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings 
 from langchain.memory import ConversationBufferWindowMemory
 from langchain_community.chat_models import ChatOllama
-from config import GOOGLE_API_KEY
 from deep_translator import GoogleTranslator
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import google.generativeai as genai
