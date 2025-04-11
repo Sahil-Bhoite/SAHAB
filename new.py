@@ -1,11 +1,13 @@
 import os
+from dotenv import load_dotenv
 import time
 import streamlit as st
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.memory import ConversationBufferWindowMemory
 from langchain_community.chat_models import ChatOllama
-from config import GOOGLE_API_KEY
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 from deep_translator import GoogleTranslator
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import google.generativeai as genai
