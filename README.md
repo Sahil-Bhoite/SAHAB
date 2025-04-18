@@ -31,9 +31,6 @@ Developing an AI-based interactive Chatbot or virtual assistant for the Departme
 - Streamlines the process of finding essential legal details, improving the accessibility of information for citizens.
 - Reduces dependency on manual searches and costly legal advice by offering initial, reliable guidance.
 
-## Architecture and Data Flow
-
-[Include an image or description of the project's architecture here]
 
 ## Technologies Used
 
@@ -44,7 +41,7 @@ Developing an AI-based interactive Chatbot or virtual assistant for the Departme
 
 ## Demo
 
-Try SAHAB live: [SAHAB Demo](https://sahab-demo.streamlit.app)
+Try SAHAB live: [SAHAB Demo](https://sahab-1.streamlit.app)
 
 ## Installation
 
