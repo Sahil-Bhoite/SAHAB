@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { ChatRequest, ChatResponse } from '../types';
 
-// Assuming backend runs on 8000. In prod, this should be env var.
-const API_URL = 'http://localhost:8000/api/v1';
+// Use environment variable for API URL
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
 
 export const api = axios.create({
   baseURL: API_URL,
