@@ -2,6 +2,8 @@
 
 SAHAB is an AI-driven legal chatbot designed to provide accessible legal information based on the Indian Penal Code (IPC) and Department of Justice (DoJ) services. It leverages RAG (Retrieval-Augmented Generation) to provide grounded answers.
 
+<img width="1552" height="921" alt="Screenshot 2025-12-01 at 2 00 48 PM" src="https://github.com/user-attachments/assets/c8db5e1f-109a-4634-8cb7-ed05a4e0c851" />
+
 ## Tech Stack
 
 *   **Frontend:** React, TypeScript, Vite, Tailwind CSS, Framer Motion, Three.js (@react-three/fiber)
@@ -10,6 +12,8 @@ SAHAB is an AI-driven legal chatbot designed to provide accessible legal informa
 *   **Embeddings:** law-ai/InLegalBERT (Custom implementation using Transformers)
 *   **Vector Database:** FAISS (Locally persisted)
 *   **Translation:** Deep Translator
+
+
 
 ## Features
 
